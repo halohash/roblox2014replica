@@ -165,7 +165,7 @@
             </div>
 
             <div class="collapse navbar-collapse col-sm-6" id="LandingNavbar" ng-controller="LoginController">
-                <form name="loginForm" action="https://www.roblox.com/newlogin" id="LogInForm" class="navbar-form form-inline navbar-right" ng-submit="submitLogin($event)" method="post" role="form" novalidate>
+                <form name="loginForm" action="newlogin" id="LogInForm" class="navbar-form form-inline navbar-right" ng-submit="submitLogin($event)" method="post" role="form" novalidate>
                     <div class="form-group" ng-class="{ 'has-error': loginForm.username.$invalid && badSubmit}">
                         <input id="LoginUsername" type="text" placeholder="Username" class="form-control" name="username" ng-required="true" ng-model="login.username" />
                     </div>
@@ -248,7 +248,7 @@
                 <div class="clearfix visible-sm"></div>
                 <div class="col-xs-12 col-md-6">
                     <div id="SignUpFormContainer" class="" ng-controller="SignUpController">
-                        <form action="https://www.roblox.com/landing/signup" name="signupForm" id="SignUpForm" method="post" role="form" ng-submit="submitSignup($event)" novalidate autocomplete="off">
+                        <form action="signup" name="signupForm" id="SignUpForm" method="post" role="form" ng-submit="submitSignup($event)" novalidate autocomplete="off">
                             <input name="__RequestVerificationToken" type="hidden" value="4lwNs7bb2NTFZy2lrBMSnVAZTGngdXnSx6xXrXQap4C0Cd7dMNxohhR2g4SRX9dPv8wlzNYB-W8CVie9I0p5b4d8gX81" />
                             <h3 class="text-left">Sign up and start having fun!</h3>
                             <div class="form-group" ng-class="{ 'has-error': (badSubmit && signupForm.userName.$invalid) || signupForm.userName.$showError, 'has-success': signupForm.userName.$showSuccess  }">
